@@ -60,7 +60,7 @@ def get_thumbnail(in_filename, path, ttl):
             .overwrite_output()
             .run(capture_stdout=True, capture_stderr=True)
         
-        return out_filename
+      return out_filename
     except ffmpeg.Error as e:
       return None
 
